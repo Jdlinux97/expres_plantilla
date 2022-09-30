@@ -13,7 +13,7 @@ Requires [Node.js](https://nodejs.org/) v12.16+ to run.
 Clone the repository on your pc
 
 ```sh
-$ git clone https://github.com/Jdlinux97/express_plantilla.git
+$ git clone https://github.com/dimasdevelop/express_plantilla.git
 ```
 
 Position in the folder that contains the code and install the dependencies.
