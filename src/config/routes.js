@@ -4,7 +4,7 @@ const ruta = require(`${__dirname}/../routes`);
 
 module.exports = (app, io) => {
 	//Archivos de rutas del servicio
-	app.use('/api', ruta);
+	app.use('/', ruta);
 
 	// Ruta de error
 	app.all('*', (req, res) => {

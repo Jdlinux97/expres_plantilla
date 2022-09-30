@@ -1,12 +1,12 @@
-ARG PORT
-FROM node:10.16-alpine
+FROM node:18 
 
-WORKDIR /usr/src
+WORKDIR /app/service
 
-COPY [".", "/usr/src"]
+COPY package*.json ./
 
 RUN npm install
 
-EXPOSE ${PORT}
+COPY src ./src
+RUN ls 
 
-CMD ["npm","run", "dev"]
+CMD [ "npm", "run", "start:dev" ]

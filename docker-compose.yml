@@ -1,16 +1,10 @@
-version: "3.2"
+version: "3.8"
 
 services:
   express:
-    build: 
-      context: .
-      dockerfile: Dockerfile
-      args:
-        PORT: ${PORT}
-    image: express
-    expose:
-    - ${PORT}
-    volumes:
-    - ./:/usr/src
+    image: node:18
+    container_name: express_platilla
+    build: .
     ports:
-      - "${PORT}:${PORT}"
+      - 3000:8080
+    command: bash -c 'npm i && npm run start:dev'

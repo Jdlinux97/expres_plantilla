@@ -4,9 +4,9 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"start:prod": "cross-env LISTENG_TYPE=normal node app",
-		"start:dev": "cross-env LISTENG_TYPE=normal nodemon app",
-		"start:public": "cross-env LISTENG_TYPE=public IP=127.0.0.1  node app",
+		"start:prod": "cross-env LISTENG_TYPE=normal node src",
+		"start:dev": "cross-env LISTENG_TYPE=normal nodemon src",
+		"start:public": "cross-env LISTENG_TYPE=public IP=127.0.0.1  node src",
 		"start:function": "node ./"
 	},
 	"repository": {
